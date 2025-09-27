@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+body {
+  background-image: url('eMAS_1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+  
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h4 class= "logo">VisionF&D </h4>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="model.html">MODELS</a></li>
+                    <li><a href="dicover.html">DISCOVER</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+            </div> 
+  <section class ="tajuk">
+    <h2>EXTERIOR</h2>
+  </section>          
+  <section class="cars">
+    <div class="car-card">
+      <img src="QQ.png" alt="Electrifying Drive">
+          </div>
+
+    <div class="car-card">
+      <img src="bb.png" alt="Electrifying Experience">
+          </div>
+          
+    <div class="car-card">
+      <img src="u.png" alt="Electrifying Drive">
+          </div>
+
+    <div class="car-card">
+      <img src="iman.png" alt="Electrifying Experience">
+          </div>      
+  </section>
+  
+  <section class ="tajuk">
+    <h2>PERFORMANCE & SAFETY</h2>
+  </section>          
+  
+  <section class="cars">
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+     <img src="ee.png" style="width:100%">
+    
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+     <img src="h.png" style="width:100%">
+    
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+      <img src="oo.png" style="width:100%">
+    
+    </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+      <img src="pp.png" style="width:100%">
+    
+    </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+      <img src="m.png" style="width:100%">
+    
+    </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+      <img src="cc.png" style="width:100%">
+    
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+     <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+     showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+    
+  </section>               
+
+            
+  
+</body>
+</html>
